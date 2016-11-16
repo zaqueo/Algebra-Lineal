@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Final|Algebra Lineal 2016</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.1.34/css/materialdesignicons.min.css" type="text/css">
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection"/>
+      <!-- Compiled and minified JavaScript -->
+      <style type="text/css">
+          input {
+              font-size: 30px !important;
+              text-align: center !important;
+          }
+          
+          
+          
+          
+          
+      </style>
+  </head>
+
+    <body>
+        
+<div class="navbar-fixed  blue-grey darken-2">
+  <nav>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#operacion1">Operacion entre matrices</a></li>
+      <li><a href="#operacion2">Operacion de matrices</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#ecuacion">Sistema de ecuaciones</a></li>
+    </ul>
+    <div class="nav-wrapper blue-grey darken-2"> <a href="#acercade" class="brand-logo right ">Acerca de</a> 
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li class="active"><a href="#">Proyecto final</a></li>
+        <li><a a class="dropdown-button" data-beloworigin="true" data-hover="true" data-constrainwidth="false" href="#!" data-activates="dropdown2">Sistema de ecuaciones</a></li>
+        <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" data-constrainwidth="false" href="" data-activates="dropdown1">Matrices</a></li>
+      </ul>
+      <ul id="mobile-demo" class="side-nav  blue-grey darken-2 white-text text-white">
+        <li class="no-padding white-text">
+          <ul class="collapsible collapsible-accordion white-text text-white">
+              <li class="bold"><a class="collapsible-header waves-effect waves-teal white-text text-white">Ecuacion</a>
+                  <div class="collapsible-body blue-grey lighten-4">
+                    <ul>
+                        <li><a href="#ecuacion">Ecuacion</a></li>
+                    </ul>
+                    </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal white-text text-white">Matrices</a>
+              <div class="collapsible-body blue-grey lighten-4">
+                <ul>
+                    <li><a href="#operacion1">Operacion entre matrices</a></li>
+                    <li><a href="#operacion2">Operacion de matrices</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header  waves-effect waves-teal white-text text-white">Vectores</a>
+              <div class="collapsible-body blue-grey lighten-4">
+                <ul>
+                  <li><a href="#">link1</a></li>
+                  <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="waves-effect waves-light btn" href="#acercade">Acerca de mi</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div id="ecuacion" class="container col s12 m12 row flow-text">
+    <h2 class="text-grey darken-4 center" >Resolucion de una ecuacion de segundo grado.</h2>
+    <form id="ecuacionSegundoGrado">
+    <table>  
+        <tr>
+            <td><input class="input-field" placeholder="x2" type="text" name="a" size="5"></td>
+            <td>+</td>
+            <td><input class="input-field" placeholder="x" type="text" name="b" size="5"></td>
+            <td>+</td>
+            <td><input class="input-field" placeholder="1" type="text" name="c" size="5"></td>
+        </tr>
+    </table>
+        <div class="col s12 m12 ">
+            <div class="col s4 m4 center">
+                <button class="btn waves-effect waves-light mdi mdi-eraser"  align="center" type="reset" name="Name B1" value="Restablecer"></button>
+            </div>
+            <div class="col s4 m4 center">
+                <button class="btn waves-effect waves-light mdi mdi-equal" align="center" type="submit" name="Name B2" value="Calcular"></button>
+            </div>
+            <div class="col s4 m4 center">
+                <a class="waves-effect waves-light btn" href="#teoria1">teoria</a>
+            </div>
+        </div>
+      </form>    
+</div>
+          <div class="divider"></div>
+
+        
+        <div id="operacion1" class="container col s12 m12 row flow-text ">
+            <h2 class="text-grey darken-4 center" >Operacion entre matrices</h2>
+            <form id="entreMatrices">
+                <div class="col s12 m6">
+                    <h3 align="center" class="flow-text">Matriz A 3*3 </h3>
+                    <table class="centered">
+                        <tr>
+                            <td><input type="text" name="x1"/></td>
+                            <td><input type="text" name="x2"/></td>
+                            <td><input type="text" name="x3" /></td>
+                            
+                        </tr>
+
+  <tr>
+    <td><input type="text" name="x4" /></td>
+    <td><input type="text" name="x5" /></td>
+    <td><input type="text" name="x6" /></td>
+
+  </tr>
+            
+  <tr>
+  <td><input type="text" name="x7" /></td>
+  <td><input type="text" name="x8" /></td>
+  <td><input type="text" name="x9" /></td>
+  </tr>
+      </table> 
+
+        </div>
+        <div class="col s12 m6">
+            <h3 align="center" class="flow-text">Matriz B 3*3 </h3>
+        <table class="centered"> 
+  <tr>
+    <td><input type="text" name="y1" /></td>
+    <td><input type="text" name="y2" /></td>
+    <td><input type="text" name="y3" /></td>
+    </tr>
+      
+      <tr>
+      <td><input type="text" name="y4" /></td>
+      <td><input type="text" name="y5" /></td>
+      <td><input type="text" name="y6" /></td>
+      </tr>
+
+    <tr>
+      <td><input type="text" name="y7" /></td>
+      <td><input type="text" name="y8" /></td>
+      <td><input type="text" name="y9" /></td>
+    </tr>
+    </table>
+        </div>
+        <div class="col s12 m12 input-field" >
+          <select name="opciones">
+              <option value="" disabled selected flow-text>Seleccione aqui la operacion</option>
+              <option value="sumar"> Suma de matrices </option>
+              <option value="resta"> Resta de matrices </option>
+              <option value="multiplicacion"> Multiplicacion de matrices </option>
+          </select>
+            </div>
+                <div class="row center">
+                    <div class="container col s4 m4">
+                        <button class="btn waves-effect waves-light mdi mdi-reload"  align="center" type="reset" name="Name B" value="Restablecer"></button>
+                    </div>
+                    <div class="container col s4 m4">          
+                        <button class="btn waves-effect waves-light mdi mdi-equal center-align"  align="center" type="submit" name="Calcular" value="Calcular">
+                        </button>
+                    </div>
+                    <div class="container col s4 m4">   
+                        <a class="waves-effect waves-light btn" href="#teoria2">teoria</a>
+                    </div>
+        </form>
+    </div>
+                <div class="divider"></div>
+
+        <div id="operacion2" class="container col s12 m12 row flow-text center ">
+            <form id="unaMatriz">
+                <div class="col s12 m12 center">
+                    <h3 align="center" class="flow-text">Matriz C </h3>
+                    <table class="centered center">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td><input type="text" name="x1" /></td>
+                                        <td><input type="text" name="x2" /></td>
+                                        <td><input type="text" name="x3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="x4" /></td>
+                                        <td><input type="text" name="x5" /></td>
+                                        <td><input type="text" name="x6" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="x7" /></td>
+                                        <td><input type="text" name="x8" /></td>
+                                        <td><input type="text" name="x9" /></td>
+                                    </tr>
+                                </table> 
+                    </table>
+                </div>
+                    <div class="col s12 m12 input-field" id="soloEscalar" center>
+                        <label>Número por el cual va a multiplicar la matriz</label>
+ <input type="text" name="mult"/><br>
+                    </div>
+                
+                
+                <div class="col s12 m12 input-field center" >
+          <select name="opcion" id="opcionOperaciones">
+                        <option value="" disabled selected flow-text>Seleccione aqui la operacion</option>
+                        <option value="mul"> Multiplicación escalar </option>
+                        <option value="trans" >Matriz transpuesta </option>
+                        <option value="inver"> Matriz inversas </option>
+                        <option value="deter">Determinante </option>
+          </select>
+                </div>
+                    <div class="container col s1 m2 offset-l5">
+              
+                        <button class="btn waves-effect waves-light mdi mdi-equal center-align"  align="center" type="submit" name="Calcular" value="Calcular">
+              
+                        </button>
+                     </div>
+</form>
+        
+        
+        
+        
+        
+        </div>
+        
+        
+        
+        
+      <!------------------------------- Teorias-------------------->
+                  <div id="teoria1" class="modal">
+                      <div class="modal-content">
+                          <p>La formula general de la ecuación de segundo grado es esta:</p>
+                          <img class="materialboxed" width="650" src="http://www.uterra.com/archcodfuente/demos/id114/ecuacion_segundo_grado.jpg">
+                          <p>Lo que aquí hemos hecho ha sido dividir la ecuación en sus operaciones más simples, y seguidamente operar con estos valores. Para el desarrollo de esta ecuación son necesarias las operaciones de suma, resta, multiplicación, división, potencia y radical. En este sentido, cabe mencionar que no hemos usado la función sqrt, que nos da la raiz cuadrada, y en su lugar hemos usado la función pow, que calcula potencias. La lógica de esto, es sencilla, si elevamos un valor a 1/2, obtenemos la raiz cuadrada, si lo elevamos a 1/3, tenemos la raiz cúbica, y asi sucesivamente.</p>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">De acuerdo</a>
+                      </div>
+                </div>
+            <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#resultado">Resultado</a>
+
+ <!-- Modal Structure -->
+  <div id="resultado" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Resultado de la operacion</h4>
+      <div id="resultadoDiv"></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
+        
+        
+        
+        
+        
+      <!-------------------------------Fin    Teorias-------------------->
+
+        
+              <div id="acercade" class="modal">
+    <div class="modal-content">
+                <div class="row">
+          <div class="col s12 m3 center-on-small-only">
+            <div class="image-container">
+              <img src="http://algebralineal.io.gt/fotos/1.jpg" class="circle responsive-img">
+            </div>
+          </div>
+          <div class="col s12 m9">
+            <h4>Zaqueo Gomez Gomez</h4>
+            <p>Carnet:  0904-14-4224</p>
+          </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+            
+            
+            
+            
+            
+            
+            
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>     
+        <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        
+        <script type="text/javascript">
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+        </script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+    $('select').material_select();
+  });
+        </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+        $("#soloEscalar").hide();
+  }); 
+    
+$('#ecuacionSegundoGrado').submit(function () {
+        $.post("ecuacion.php", $("#ecuacionSegundoGrado").serialize(), function(data) {
+  
+            $( '#resultadoDiv').html(data);
+              $('#resultado').modal('open');
+    });
+    return false; 
+}); 
+
+    
+$('#entreMatrices').submit(function () {
+        $.post("matriz.php", $("#entreMatrices").serialize(), function(data) {
+  
+            $( '#resultadoDiv').html(data);
+              $('#resultado').modal('open');
+    });
+    return false; 
+}); 
+    
+$('#unaMatriz').submit(function () {
+        $.post("matrizz.php", $("#unaMatriz").serialize(), function(data) {
+  
+            $( '#resultadoDiv').html(data);
+              $('#resultado').modal('open');
+    });
+    return false; 
+}); 
+
+    
+    $('#opcionOperaciones').on('change', function() {
+        var sel0 = this.value;
+        if(sel0=='mul'){
+            $("#soloEscalar").show();
+        }
+        else
+            {
+                $("#soloEscalar").hide();
+            }
+});
+            </script>
+      
+      </body>
+</html># Algebra-Lineal
